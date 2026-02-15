@@ -49,7 +49,7 @@ def evaluate_strategy(csv_file, strategy):
 
     # Evaluate using Linear Regression
     cv_method = KFold(n_splits=5, shuffle=True, random_state=STUDENT_ID)
-    model = LinearRegression(random_state=STUDENT_ID)
+    model = LinearRegression()
 
     cv_results = cross_validate(
         model,
